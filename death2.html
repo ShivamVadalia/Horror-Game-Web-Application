@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dare2Die | Game</title>
+    <link rel="stylesheet" href="./css/death.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./css/images/ghomst.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+</head>
+<body id="fademe">
+    <div class="overlay">
+        <div class="choice">
+            <div>
+                <h1 id='reason'>A <span>bloodthirsty</span> mutant rips you apart.</h1>
+                <h1>You are<span> DEAD</span>.</h1>
+            </div>
+            <button id="choice1" onclick="change()">Go and Restart</button> 
+            <button id="choice2" onclick="openCloseTab()">Exit</button>
+            <div class="cred">
+              <a href="./credits.html"><h2>Credits</h2></a>
+             </div>
+        </div>
+    </div>
+    <div id="video-overlay" class="video-overlay">
+        <a class="video-overlay-close">&times;</a>
+      </div>
+      <a>
+        <audio id="background" autoplay loop>
+          <source src="hunter.ogg" type="audio/ogg">
+          <source src="hunter.mp3" type="audio/mpeg">
+        </audio>
+      
+        </a>
+<script src="./js/death.js"></script>
+</body>
+</html>

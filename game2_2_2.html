@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dare2Die | Game</title>
+    <link rel="stylesheet" href="./css/game2_2_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./css/images/ghomst.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+</head>
+<body id="fademe">
+    <div class="overlay">
+        <div class="choice">
+            <div>
+                <h1>As you explore the house, you see an old woman sitting in a rocking chair.</h1>
+            </div>
+            <button id="choice1" onclick="change()">Go and talk.</button> 
+            <button id="choice2" onclick="change2()">Ew, she must be a creep.</button>
+            <br>
+            <span id="countdown" style="font-weight: bold;"></span>
+        </div>
+         
+    </div>
+  
+    <a>
+        <audio id="background" autoplay loop>
+          <source src="hunter.ogg" type="audio/ogg">
+          <source src="hunter.mp3" type="audio/mpeg">
+        </audio>
+      
+        </a>
+    
+<script src="./js/game2_2_2.js"></script>
+</body>
+</html>

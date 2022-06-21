@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dare2Die | Rules</title>
+  <link rel="stylesheet" href="./css/rule.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+  <link rel="icon" href="./css/images/ghomst.png" type="image/x-icon">
+</head>
+
+<body id="fademe">
+  <div class="overlay">
+    <div class="choice">
+      <div>
+        <h1>Rules:
+            <br>
+            1) The game will begin with a scenario. <br>You will have two choices.
+            <br>2) Within 60 seconds, you must choose an option.
+            <br>
+            3) If you do not make a decision, you will perish.
+      </div>
+      <button id="choice1" onclick="change()">Start the game</button>
+    </div>
+ 
+  </div>
+  <a>
+    <audio id="background" autoplay loop>
+      <source src="hunter.ogg" type="audio/ogg">
+      <source src="hunter.mp3" type="audio/mpeg">
+    </audio>
+  
+    </a>
+  <script src="./js/rule.js"></script>
+</body>
+</html>
