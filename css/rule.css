@@ -1,0 +1,216 @@
+html{
+    transition: background-image 1.5s ease-in-out;
+    background: url('./images/rule.jpg') no-repeat center center fixed ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Annie Use Your Telescope', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+.choice{
+    margin-top: 10%;
+}
+.overlay {
+    margin:0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    margin-left: -10px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+h1{
+    color: beige;
+    font-size: 45px;
+    animation: fadeIn 2s both;
+}
+
+button{
+    width: 20%;
+    height: 50px;
+    margin: 15px;
+    font-size: 25px;
+    border-radius: 4px;
+    background-color: beige;
+    border: none;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: 1000;
+}
+
+button:hover{
+    background-color: #c21e40;
+    box-shadow: 0 0 5px #c21e40, 0 0 25px #c21e40,0 0 50px #c21e40,0 0 200px #c21e40;
+    color: beige;
+}
+
+#choice1{
+    animation: fadeIn 2s 1s both;
+}
+
+#choice2{
+    animation: fadeIn 2s 2s both;
+}
+
+#fademe{
+    opacity:0;
+    transition:2s;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#switch-container {
+  margin: 15px;
+}
+
+#sound-off-icon,
+#sound-on-icon {
+  z-index: 0;
+  position: absolute;
+}
+
+#sound-off-icon {
+  top: 9px;
+  right: 7px;
+}
+
+#sound-on-icon {
+  top: 9px;
+  left: 5.5px
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: -49%;
+  margin-top: 30px;
+  
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch:before input { 
+  content: "switch";
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:before {
+  content: "input";
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c7c7c7;  /* light gray */
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #8b032c; /* blue */
+}
+
+input:focus + .slider {
+  /* blue */
+  box-shadow: 0 0 1px #8b032c; /* blue */
+}
+
+input:checked + .slider:before {
+  content: "";
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* give the button rounded edges */
+/* for square edges, remove these values */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fff;
+}
+
+.svg-icon circle {
+  stroke: #8b032c;
+  stroke-width: 1;
+}
+
+
+
+#sound-making-button {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: .5rem 2rem;
+  border: none;
+  background-color: #e8cce2;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .4);
+  transition: box-shadow .25s, background-color .25s;
+}
+
+#sound-making-button:hover {
+  cursor: pointer;
+  background-color: #dec5d9;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .5);
+}
+#countdown {
+  font-size: 48px;
+  margin-top: 60px;
+  color: beige;
+  top: 40%;
+}

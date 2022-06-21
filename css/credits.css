@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap&subset=cyrillic');
+
+:root {
+  --yellow: #e20044;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+::selection {
+  color: #FFFFFF;
+  color: var(--white, #FFFFFF);
+  background: #e20044;
+  background: var(--yellow, #e20044);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background: #000000;
+  background: var(--black, #000000);
+  overflow-y: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  padding-top: 42%;
+  margin: auto;
+  font-family: 'Caveat';
+/*   font-family: 'Roboto'; */
+  font-size: 44px;
+  font-size: calc(22px + (36 - 22) * ((100vw - 980px) / (1400 - 980)));
+  white-space: nowrap;
+  color: #FFFFFF;
+  color: var(--white, #FFFFFF);
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 980px) {
+  main {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main {
+    font-size: 36px;
+  }
+}
+
+/* Scroller */
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /*animation: scroll 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite*/
+  animation: scroll 35s linear;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  2% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  95% {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+
+/* Sections */
+section {
+  position: relative;
+  padding-top: 42%;
+}
+
+section:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
+/* List */
+dl {
+  font-size: .6em;
+  line-height: 1.5;
+}
+
+dl:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+dt,
+dd {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+dt {
+  text-align: right;
+  padding-right: 10px;
+}
+
+dd {
+  margin: 0;
+  padding-left: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #e20044;
+  color: var(--yellow, #e20044);
+}
+
+/* Typography */
+h3,
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: .8em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: .8em;
+}
+
+p {
+  font-weight: 400;
+  color: #e20044;
+  color: var(--yellow, #e20044);
+}
+
+span {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  color: var(--white, #FFFFFF);
+}
+
+b {
+  font-weight: 700;
+}
+  
